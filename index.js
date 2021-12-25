@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const serviceAccount = require("./config/luxury-hotel-432ef-firebase-adminsdk-wc9sj-93cdf541ce.json");
+const serviceAccount = require("./luxury-hotel-432ef-firebase-adminsdk-wc9sj-93cdf541ce.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
